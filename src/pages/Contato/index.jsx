@@ -26,7 +26,7 @@ const contatos = [
 export default function Contato() {
   return (
     <section id="contato" className="bg-black/90 text-white py-28 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
 
         {/* Título */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">

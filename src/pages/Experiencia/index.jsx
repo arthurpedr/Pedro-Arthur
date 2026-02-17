@@ -32,8 +32,8 @@ const experiencias = [
 
 export default function Experiencia() {
   return (
-    <section id="experiencia" className="bg-black text-white py-28 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="experiência" className="bg-black text-white py-28 px-6">
+      <div className="max-w-7xl mx-auto">
 
         {/* Cabeçalho */}
         <div className="mb-20 text-center">

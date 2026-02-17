@@ -1,29 +1,43 @@
 export default function Home() {
   return (
-    <section id="inicio"
-     className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-
-      {/* Glow roxo central */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 w-50 md:w-175 h-175 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-600/40 blur-[180px]" />
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center justify-center bg-black"
+    >
+      {/* Glow central */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div
+          className="
+            absolute top-1/2 left-1/2
+            w-64 h-64
+            sm:w-96 sm:h-96
+            md:w-lg md:h-128
+            -translate-x-1/2 -translate-y-1/2
+            rounded-full bg-cyan-600/40
+            blur-[120px] sm:blur-[160px]
+          "
+        />
       </div>
 
       {/* Conteúdo */}
-      <div className="relative z-10 max-w-5xl px-6 text-center">
+      <div className="relative z-10 w-full max-w-5xl px-6 text-center">
 
         {/* Cargo */}
-        <span className="text-sm tracking-[0.3em] text-cyan-400 uppercase">
+        <span className="text-xs sm:text-sm tracking-[0.25em] text-cyan-400 uppercase">
           Desenvolvedor Front-End
         </span>
 
         {/* Nome */}
         <h1 className="mt-6 text-4xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight">
-          Pedro Arthur
+          PEDRO ARTHUR
         </h1>
 
         {/* Descrição */}
         <p className="mt-6 text-base sm:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
-          Transformando ideias em <span className="text-white font-medium">experiências digitais</span>.
+          Transformando ideias em{" "}
+          <span className="text-white font-medium">
+            experiências digitais
+          </span>.
           Focado em interfaces modernas, funcionais e centradas no usuário.
         </p>
 
