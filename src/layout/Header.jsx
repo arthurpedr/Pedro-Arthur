@@ -17,9 +17,6 @@ backdrop-blur border-b border-white/5"
     {/* Logo */}
     <a href="/inicio">
       <div className="flex items-center gap-2 text-white font-bold text-xl">
-        <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-cyan-400/20 text-cyan-400">
-          {"</>"}
-        </span>
         <span>Dev Pedro</span>
       </div>
     </a>

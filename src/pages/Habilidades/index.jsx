@@ -2,20 +2,20 @@ import H from "../../components/h.jsx";
 function Servicos() {
 
   const Items = [
-    "./html.svg",
-    "./css.svg",
-    "./js.svg",
-    "./react.svg",
-    "./tailwind.svg",
-    "./c.svg",
-    "./figma.svg",
-    "./html.svg",
-    "./css.svg",
-    "./js.svg",
-    "./react.svg",
-    "./tailwind.svg",
-    "./c.svg",
-    "./figma.svg",
+    "./Html.svg",
+    "./Css.svg",
+    "./Js.svg",
+    "./React.svg",
+    "./Tailwind.svg",
+    "./C.svg",
+    "./Figma.svg",
+    "./Html.svg",
+    "./Css.svg",
+    "./Js.svg",
+    "./React.svg",
+    "./Tailwind.svg",
+    "./C.svg",
+    "./Figma.svg",
   ];
 
   return (
@@ -26,7 +26,7 @@ function Servicos() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Minhas Habilidades
           </h2>
-          <p className="text-gray-400">
+          <p className="text-gray-400 px-2">
             Um panorama das tecnologias e ferramentas que domino.
           </p>
       </div>

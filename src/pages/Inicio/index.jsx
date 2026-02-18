@@ -21,7 +21,6 @@ export default function Home() {
 
       {/* Conteúdo */}
       <div className="relative z-10 w-full max-w-5xl px-6 text-center">
-
         {/* Cargo */}
         <span className="text-xs sm:text-sm tracking-[0.25em] text-cyan-400 uppercase">
           Desenvolvedor Front-End
@@ -35,15 +34,12 @@ export default function Home() {
         {/* Descrição */}
         <p className="mt-6 text-base sm:text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
           Transformando ideias em{" "}
-          <span className="text-white font-medium">
-            experiências digitais
-          </span>.
+          <span className="text-white font-medium">experiências digitais</span>.
           Focado em interfaces modernas, funcionais e centradas no usuário.
         </p>
 
         {/* Botões */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-
           <a
             href="#projetos"
             className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-400 text-white font-medium hover:bg-cyan-500 transition"
@@ -58,7 +54,6 @@ export default function Home() {
           >
             Entrar em Contato
           </a>
-
         </div>
       </div>
     </section>

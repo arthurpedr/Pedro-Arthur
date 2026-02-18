@@ -1,14 +1,15 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, X } from "lucide-react";
+import { useState } from "react";
 
 const projetos = [
   {
-    titulo: "Site Lisa",
+    titulo: "Landing page Lisa",
     descricao:
-      "Landing page para um laboratório de inovação, com design clean e foco em conversão.",
+      "Site para um laboratório de inovação, com design clean e foco em conversão.",
     imagem: "/Lisa.png",
     tags: ["React", "Tailwind"],
-    demo: "#",
-    codigo: "#",
+    demo: "https://lisa.ufersa.dev.br",
+    codigo: "Privado",
   },
   {
     titulo: "Sistema de Estoque",
@@ -16,22 +17,24 @@ const projetos = [
       "Dashboard de controle de estoque para pequenas empresas, com gráficos e relatórios personalizados.",
     imagem: "/sistemadeestoque.png",
     tags: ["React", "Tailwind"],
-    demo: "#",
-    codigo: "#",
+    demo: "https://sistemadeestoque.vercel.app",
+    codigo: "Privado",
   },
 ];
 
 export default function Projetos() {
+  const [modalAberto, setModalAberto] = useState(false);
+
   return (
     <section id="projetos" className="bg-black/95 text-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
         {/* Cabeçalho */}
-        <div className="mb-14">
+        <div className="flex flex-col justify-center items-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Projetos em Destaque
           </h2>
-          <p className="text-gray-400 max-w-xl">
+          <p className="text-gray-400 text-center">
             Uma seleção de trabalhos recentes focados em performance e UX.
           </p>
         </div>
@@ -76,26 +79,63 @@ export default function Projetos() {
 
                 {/* Links */}
                 <div className="flex gap-6 text-sm">
+                  {/* Demo */}
                   <a
                     href={projeto.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 hover:text-cyan-400 transition"
                   >
                     Ver Projeto <ExternalLink size={16} />
                   </a>
 
-                  <a
-                    href={projeto.codigo}
-                    className="flex items-center gap-2 hover:text-cyan-400 transition"
-                  >
-                    Código <Github size={16} />
-                  </a>
+                  {/* Código */}
+                  {projeto.codigo === "Privado" ? (
+                    <button
+                      onClick={() => setModalAberto(true)}
+                      className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition"
+                    >
+                      Código <Github size={16} />
+                    </button>
+                  ) : (
+                    <a
+                      href={projeto.codigo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 hover:text-cyan-400 transition"
+                    >
+                      Código <Github size={16} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
-
       </div>
+
+      {/* Modal */}
+      {modalAberto && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur">
+          <div className="bg-zinc-900 border border-white/10 rounded-xl p-6 max-w-sm w-full relative">
+            <button
+              onClick={() => setModalAberto(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-white"
+            >
+              <X size={18} />
+            </button>
+
+            <h3 className="text-xl font-semibold mb-3">
+              Código privado 🔒
+            </h3>
+
+            <p className="text-gray-400 text-sm">
+              Este projeto possui código proprietário e não pode ser
+              disponibilizado publicamente.
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
