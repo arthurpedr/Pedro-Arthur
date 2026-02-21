@@ -1,4 +1,5 @@
 import { ExternalLink, Github, X } from "lucide-react";
+import Animacao from "../../components/Animacao";
 import { useState } from "react";
 
 const projetos = [
@@ -20,6 +21,15 @@ const projetos = [
     demo: "https://sistemadeestoque.vercel.app",
     codigo: "Privado",
   },
+  {
+    titulo: "Site de Previsão do Tempo",
+    descricao:
+      "projeto de Previsão do Tempo que permite ao usuário consultar as condições climáticas atuais de sua cidade informando o CEP.",
+    imagem: "/tempo.png",
+    tags: ["Html", "Css", "Js"],
+    demo: "https://arthurpedr.github.io/Previs-o-do-Tempo/",
+    codigo: "https://github.com/arthurpedr/Previs-o-do-Tempo",
+  },
 ];
 
 export default function Projetos() {
@@ -27,6 +37,7 @@ export default function Projetos() {
 
   return (
     <section id="projetos" className="bg-black/95 text-white py-24 px-6">
+      <Animacao>
       <div className="max-w-7xl mx-auto">
 
         {/* Cabeçalho */}
@@ -136,6 +147,7 @@ export default function Projetos() {
           </div>
         </div>
       )}
+      </Animacao>
     </section>
   );
 }

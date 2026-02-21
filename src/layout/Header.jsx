@@ -17,7 +17,7 @@ backdrop-blur border-b border-white/5"
     {/* Logo */}
     <a href="/inicio">
       <div className="flex items-center gap-2 text-white font-bold text-xl">
-        <span>Dev Pedro</span>
+        <p>Dev<span className="text-cyan-400">Pedro</span></p>
       </div>
     </a>
 

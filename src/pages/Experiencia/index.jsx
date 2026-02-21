@@ -1,4 +1,5 @@
 import { Briefcase, Building2, HeartHandshake } from "lucide-react";
+import Animacao from "../../components/Animacao";
 
 const experiencias = [
   {
@@ -33,6 +34,7 @@ const experiencias = [
 export default function Experiencia() {
   return (
     <section id="experiência" className="bg-black text-white py-28 px-6">
+      <Animacao>
       <div className="max-w-7xl mx-auto">
 
         {/* Cabeçalho */}
@@ -96,6 +98,7 @@ export default function Experiencia() {
         </div>
 
       </div>
+      </Animacao>
     </section>
   );
 }

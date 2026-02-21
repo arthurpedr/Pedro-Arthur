@@ -1,4 +1,5 @@
 import { Instagram, Mail, Linkedin, Github } from "lucide-react";
+import Animacao from "../../components/Animacao";
 
 const contatos = [
   {
@@ -26,6 +27,7 @@ const contatos = [
 export default function Contato() {
   return (
     <section id="contato" className="bg-black/90 text-white py-28 px-6">
+      <Animacao>
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Título */}
@@ -66,6 +68,7 @@ export default function Contato() {
         </div>
 
       </div>
+      </Animacao>
     </section>
   );
 }
