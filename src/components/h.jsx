@@ -1,16 +1,16 @@
 const frontendItems = [
-  "/Html.svg",
-  "/Css.svg",
-  "/Js.svg",
-  "/React.svg",
-  "/Tailwind.svg",
+  "/html.svg",
+  "/css.svg",
+  "/js.svg",
+  "/react.svg",
+  "/tailwind.svg",
 ];
 
 const otherItems = [
-  "/C.svg",
-  "/Figma.svg",
-  "/Github.svg",
-  "/Vercel.svg",
+  "/c.svg",
+  "/figma.svg",
+  "/github.svg",
+  "/vercel.svg",
 ];
 
 const Habilidades = () => {

@@ -66,6 +66,7 @@ backdrop-blur border-b border-white/5"
 
         <a
           href="#contato"
+          onClick={() => setOpen(false)}
           className="mt-4 px-6 py-2 rounded-full bg-cyan-400
           text-white font-medium hover:bg-cyan-500 transition"
         >

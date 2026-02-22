@@ -43,7 +43,7 @@ export default function Experiencia() {
             Experiência
           </h2>
           <p className="text-gray-400 max-w-xl mx-auto">
-            Minha trajetória profissional, experiênciasque contribuíram para minha evolução como desenvolvedor.
+            Minha trajetória profissional, experiências que contribuíram para minha evolução como desenvolvedor.
           </p>
         </div>
 
