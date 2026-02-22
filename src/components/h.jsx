@@ -10,6 +10,7 @@ const otherItems = [
   "/C.svg",
   "/Figma.svg",
   "/Github.svg",
+  "/Vercel.svg",
 ];
 
 const Habilidades = () => {
@@ -59,7 +60,7 @@ const Habilidades = () => {
         {/* Card Outras habilidades */}
         <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 sm:p-8 hover:border-cyan-400 transition">
           <h3 className="text-xl font-semibold mb-6 text-center lg:text-left">
-            Outras habilidades
+            Ferramentas/DevOps
           </h3>
 
           <ul className="grid grid-cols-3 gap-4">
