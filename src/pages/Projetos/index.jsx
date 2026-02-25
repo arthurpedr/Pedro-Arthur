@@ -22,6 +22,15 @@ const projetos = [
     codigo: "Privado",
   },
   {
+    titulo: "Landing page SportPro",
+    descricao:
+      "Site para uma empresa de materiais esportivos, com design moderno e foco em conversão.",
+    imagem: "/SportPro.png",
+    tags: ["React", "Tailwind"],
+    demo: "https://sportpro.vercel.app",
+    codigo: "Privado",
+  },
+  {
     titulo: "Site de Previsão do Tempo",
     descricao:
       "projeto de Previsão do Tempo que permite ao usuário consultar as condições climáticas atuais de sua cidade informando o CEP.",
@@ -51,7 +60,7 @@ export default function Projetos() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:px-6">
           {projetos.map((projeto, index) => (
             <div
               key={index}

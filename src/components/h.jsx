@@ -7,10 +7,10 @@ const frontendItems = [
 ];
 
 const otherItems = [
-  "/c.svg",
-  "/figma.svg",
   "/github.svg",
   "/vercel.svg",
+  "/c.svg",
+  "/figma.svg",
 ];
 
 const Habilidades = () => {
