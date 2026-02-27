@@ -7,8 +7,8 @@ const frontendItems = [
 ];
 
 const otherItems = [
-  "/github.svg",
-  "/vercel.svg",
+  "/Github.svg",
+  "/Vercel.svg",
   "/c.svg",
   "/figma.svg",
 ];

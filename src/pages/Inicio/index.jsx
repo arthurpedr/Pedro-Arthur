@@ -1,3 +1,5 @@
+import NeonButton from "../../components/NeonButton";
+
 export default function Home() {
   return (
     <section
@@ -48,12 +50,7 @@ export default function Home() {
             <span className="group-hover:translate-y-1 transition">↓</span>
           </a>
 
-          <a
-            href="#contato"
-            className="inline-flex items-center px-6 py-3 rounded-xl border border-white/20 text-white hover:border-cyan-400 transition"
-          >
-            Entrar em Contato
-          </a>
+          <NeonButton href="#contato">Entrar em Contato</NeonButton>
         </div>
       </div>
     </section>

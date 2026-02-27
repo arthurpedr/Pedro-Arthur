@@ -12,7 +12,7 @@ function Habilidades() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Minhas Habilidades
           </h2>
-          <p className="text-gray-400 max-w-xl mx-auto">
+          <p className="text-gray-400 max-w-xl mx-auto px-2">
             Um panorama das tecnologias e ferramentas que domino.
           </p>
           </Animacao>
