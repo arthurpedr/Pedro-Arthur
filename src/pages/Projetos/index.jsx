@@ -28,8 +28,8 @@ const projetos = [
       "Site para uma empresa de materiais esportivos, com design moderno e foco em conversão.",
     imagem: "/SportPro.png",
     tags: ["React", "Tailwind"],
-    demo: "https://sportpro.vercel.app",
-    codigo: "Privado",
+    demo: "https://sport-pro-rho.vercel.app",
+    codigo: "https://github.com/arthurpedr/SportPro",
   },
   {
     titulo: "Site de Previsão do Tempo",

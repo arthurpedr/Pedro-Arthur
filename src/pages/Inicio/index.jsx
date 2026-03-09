@@ -4,8 +4,24 @@ export default function Home() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center bg-black"
-    >
+      className="relative min-h-screen flex items-center justify-center bg-black ">
+
+  
+  {/* Black Basic Grid Background */}
+  <div
+    className="absolute inset-0 z-0"
+    style={{
+      background: "#000000",
+      backgroundImage: `
+        linear-gradient(to right, rgba(75, 85, 99, 0.4) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(75, 85, 99, 0.4) 1px, transparent 1px)
+      `,
+      backgroundSize: "40px 40px",
+    }}
+  />
+
+
+
       {/* Glow central */}
       <div className="absolute inset-0 pointer-events-none">
         <div
@@ -24,7 +40,7 @@ export default function Home() {
       {/* Conteúdo */}
       <div className="relative z-10 w-full max-w-5xl px-6 text-center">
         {/* Cargo */}
-        <span className="text-xs sm:text-sm tracking-[0.25em] text-cyan-400 uppercase">
+        <span className="text-xs sm:text-lg tracking-[0.25em] text-white uppercase">
           Desenvolvedor Front-End
         </span>
 
@@ -44,10 +60,14 @@ export default function Home() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#projetos"
-            className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-400 text-white font-medium hover:bg-cyan-500 transition"
+            className="relative group inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cyan-400 text-white font-medium hover:bg-cyan-400/90 transition overflow-hidden"
           >
             Ver Projetos
-            <span className="group-hover:translate-y-1 transition">↓</span>
+            <span
+              className="absolute top-0 -left-25 h-full w-25 opacity-60
+          bg-[linear-gradient(120deg,rgba(255,255,255,0)_30%,rgba(255,255,255,0.8),rgba(255,255,255,0)_70%)]
+          group-hover:animate-[shine_1.5s_ease-out_infinite]"
+            />
           </a>
 
           <NeonButton href="#contato">Entrar em Contato</NeonButton>

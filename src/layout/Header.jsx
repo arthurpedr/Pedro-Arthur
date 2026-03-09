@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Button from "../components/Button";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Header() {
   className="fixed top-0 z-50
 w-full max-w-full
 overflow-x-hidden
-bg-linear-to-b from-black/90 to-black/70
+bg-transparent
 backdrop-blur border-b border-white/5"
 >
   <div className="max-w-7xl w-full mx-auto py-4 px-6 flex items-center justify-between">
@@ -35,13 +36,7 @@ backdrop-blur border-b border-white/5"
     </nav>
 
     {/* Botão Desktop */}
-    <a
-      href="#contato"
-      className="hidden md:inline-flex items-center px-5 py-2 rounded-full
-      bg-cyan-400 text-white text-sm font-medium hover:bg-cyan-500 transition"
-    >
-      Contato
-    </a>
+    <Button/>
 
     {/* Botão Mobile */}
     <button onClick={() => setOpen(!open)} className="md:hidden text-white">
