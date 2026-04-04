@@ -40,6 +40,15 @@ const projetos = [
     demo: "https://arthurpedr.github.io/Previs-o-do-Tempo/",
     codigo: "https://github.com/arthurpedr/Previs-o-do-Tempo",
   },
+  {
+    titulo: "Escalonador por Loteria",
+    descricao:
+      "Sistema que simula o sorteio de uma loteria para mostrar como um escalonador por loteria funciona.",
+    imagem: "/Sistemadeescalonamento.png",
+    tags: ["React", "Tailwind", "Js"],
+    demo: "https://escalonamento-por-loteria.vercel.app",
+    codigo: "https://github.com/arthurpedr/Escalonamento-por-loteria",
+  },
 ];
 
 export default function Projetos() {
